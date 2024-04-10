@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="index.js"></script>
+
+    <style>
+        tr,
+        td {
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+     <table id="taula">
+            <thead id="capcalera">
+                <tr id="columna">
+                    <th class="thFotografia">Fotografia</th>
+                    <th data-sort="nom">Nom Animal</th>
+                    <th data-sort="tipus_animal_nom">Tipus Animal</th>
+                    <th data-sort="edat">Edat</th>
+                    <th data-sort="caracteristiques">Caracteristiques</th>
+                    <th data-sort="protectora_nom">Protectora</th>
+                    <th data-sort="enfermetats">Enfermetats</th>
+                    <th data-sort="medicacions">Medicacions</th>
+                    <th data-sort="titols_publicacions">Publicacio</th>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="search" id="cercaperNomAnimal" name="cercaperNomAnimal" placeholder="Cercar per Animal"/></td>
+                    <td><input type="search" id="cercaperTipusAnimal" name="cercaperTipusAnimal" placeholder="Cercar per Tipus Animal"/></td>
+
+                    <td><input type="search" id="cercaperEdat" name="cercaperEdat" placeholder="Cercar per Edat"/></td>
+                    <td><input type="search" id="cercaperCaracteristiques" name="cercaperCaracteristiques" placeholder="Cercar Caracteristiques"/></td>
+                    <td><input type="search" id="cercaperProtectora" name="cercaperProtectora" placeholder="Cercar per Protectora"/></td>
+                    <td><input type="search" id="cercaperEnfermetat" name="cercaperEnfermetat" placeholder="Cercar per Enfermetat"/></td>
+                    <td><input type="search" id="cercaperMedicacio" name="cercaperMedicacio" placeholder="Cercar per Medicació"/></td>
+                    <td><input type="search" id="cercaperPublicacio" name="cercaperPublicacio" placeholder="Cercar per Publicacio"/></td>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        <button type="button" id="btnAnterior">Página anterior</button>
+        <span id="numPagina"></span>
+        <button type="button" id="btnPosterior">Página posterior</button>
+</body>
+
+</html>
